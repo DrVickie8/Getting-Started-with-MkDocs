@@ -14,7 +14,7 @@ Using MKDocs is easy—you don't need coding experience. All your content is in 
   ```
 - **Click** on ‘Ctrl’ + [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/%60) to view the default web page.
 
-![Read the Docs theme preview](https://lh6.googleusercontent.com/0EODHEEVHSO08x7_9j-1Sk0HOjQwn62vi--JKLatb1ORLLDMcnl5GRmIITQeS8COaOtqHh03VeYU7fzqemjwL90SQMFI2w8UP2AlBtTY1v2zyXVQ2VGeqPHGRxrQc75UHGs7ahB5iPSl358Um_7-8a8 align="left")
+![Read the Docs theme preview](images/MkDocs-readthedocs)
 
 ## Making Changes
 
