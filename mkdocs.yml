@@ -1,0 +1,13 @@
+site_name: Getting Started with MkDocs
+nav:
+  - Home: index.md
+  - How to Use MkDocs:
+      - Installation: docs/Using-mkdocs/usingmkdocs.md
+      - Setup: docs/Using-mkdocs/setup.md
+  - Understanding the Project Structure: structure.md
+  - Writing: writing.md
+  - Using Themes: themes.md
+  - Building and Deploying Your Site: deploy.md
+  - Conclusion: summary.md
+  - Next Steps: resources.md
+theme: readthedocs
