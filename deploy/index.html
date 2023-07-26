@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Building and Deploying Your Site - Getting Started with MkDocs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Building and Deploying Your Site";
+        var mkdocs_page_input_path = "deploy.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Getting Started with MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">How to Use MkDocs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/usingmkdocs.md">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/setup.md">Setup</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../structure/">Understanding the Project Structure</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../writing/">Writing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../themes/">Using Themes</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Building and Deploying Your Site</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../summary/">Conclusion</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../resources/">Next Steps</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Getting Started with MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Building and Deploying Your Site</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="building-and-deploying-your-site">Building and Deploying Your Site</h1>
+<p>This process makes your MkDocs site live and accessible to people. To get started:</p>
+<ul>
+<li><strong>Create</strong> a GitHub account on the <a href="https://github.com/">website</a>.</li>
+<li><strong>Create</strong> a new repository on GitHub. For more information, see <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo">Create a Repo</a>.</li>
+<li><strong>Push</strong> your site to this new repository by typing these commands after each other in your terminal.
+  <code>python
+  git init
+  git add . //Ensure to add a space after ‘add’
+  git commit -m "First commit"
+  git remote add origin https://github.com/DrVickie8/MkDocsTest.git
+  git push -set-upstream origin master</code></li>
+<li><strong>Type</strong> in your terminal and wait for a few seconds
+  <code>python
+  mkdocs gh-deploy</code></li>
+<li><strong>Create</strong> a new file called <code>.gitignore</code>, add the newly created folder <code>site</code> as seen below and save changes.<blockquote>
+<p><em>Your</em> <code>first-project</code> <em>is the name of the folder the</em> <code>site</code> <em>folder is in.</em>
+<img alt="" src="https://lh5.googleusercontent.com/XCH_ToON3enQl03imHkNcicNCJasWkJjEyE_fAjZhr_azkfdRqkXEEsbQSTAzFAZXL-eP5i-Ep3JcGUayrq619Ot-2hy9dD8UFNjV184FigCVeU6VTWhtNFrpGnUtZCShjBxdncwkH4yr33mknDYHE0 align=" title="left" /></p>
+</blockquote>
+</li>
+<li><strong>Repeat</strong> the commands below.
+  <code>python
+  git init
+  git add .gitignore //Ensure to add a space after 'add'
+  git commit -m "Fix: Adding .gitignore file"
+  git push</code></li>
+<li><strong>Go</strong> to your GitHub repository and refresh the page.</li>
+<li><strong>Scroll down</strong> to the ‘Environment’ section and click ‘github-pages'</li>
+<li><strong>Click</strong> ‘View deployment’, and your MkDocs site is now available.
+  Here is a link to a GitHub repository and documentation site used to deploy a MkDocs site created following the instructions in this guide.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../themes/" class="btn btn-neutral float-left" title="Using Themes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../summary/" class="btn btn-neutral float-right" title="Conclusion">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../themes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../summary/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
