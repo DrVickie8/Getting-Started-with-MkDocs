@@ -34,5 +34,3 @@ This process makes your MkDocs site live and accessible to people. To get starte
 - **Go** to your GitHub repository and refresh the page.
 - **Scroll down** to the ‘Environment’ section and click ‘github-pages'
 - **Click** ‘View deployment’, and your MkDocs site is now available.
-
-Here is the link to the [GitHub repository](https://github.com/DrVickie8/Getting-Started-with-MkDocs) used to deploy this documentation site.
