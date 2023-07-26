@@ -4,4 +4,6 @@ Throughout this tutorial, you gained the necessary skills to set up a MkDocs pro
 
 Utilizing this newfound knowledge, you have successfully built your documentation site. It is recommended that you continue to explore other documentation sites to improve your understanding.
 
+Here is the link to the [GitHub repository](https://github.com/DrVickie8/Getting-Started-with-MkDocs) used to deploy this documentation site.
+
 > Staying up-to-date with the latest tips and techniques is crucial to enhance your writing skills. As such, I highly encourage you to connect with me on [LinkedIn](https://www.linkedin.com/in/victoriaedjohnson/) and [Twitter](https://twitter.com/EdikanVickie).
