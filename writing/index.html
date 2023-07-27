@@ -46,9 +46,9 @@
               </ul>
               <p class="caption"><span class="caption-text">How to Use MkDocs</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/usingmkdocs.md">Installation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Using-mkdocs/usingmkdocs/">Installation</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/setup.md">Setup</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Using-mkdocs/setup/">Setup</a>
                   </li>
               </ul>
               <ul>
@@ -109,14 +109,12 @@
 <h2 id="getting-started">Getting Started</h2>
 <ul>
 <li>To get started, type this command in your terminal.
-  <code>python
-  cd my-project //  Use the name for your project</code></li>
+  <code>cd my-project //  Use the name for your project</code></li>
 <li>For a preview of your site, start the server by running the command
-  <code>python
-  mkdocs serve</code></li>
+  <code>mkdocs serve</code></li>
 <li><strong>Click</strong> on ‘Ctrl’ + <a href="http://127.0.0.1:8000/%60"><code>http://127.0.0.1:8000/</code></a> to view the default web page.</li>
 </ul>
-<p><img alt="Read the Docs theme preview" src="https://lh6.googleusercontent.com/0EODHEEVHSO08x7_9j-1Sk0HOjQwn62vi--JKLatb1ORLLDMcnl5GRmIITQeS8COaOtqHh03VeYU7fzqemjwL90SQMFI2w8UP2AlBtTY1v2zyXVQ2VGeqPHGRxrQc75UHGs7ahB5iPSl358Um_7-8a8 align=" title="left" /></p>
+<p><img alt="Read the Docs theme preview" src="../images/MkDocs-readthedocs.png" /></p>
 <h2 id="making-changes">Making Changes</h2>
 <p>To make some changes to your site, follow these steps:</p>
 <ol>
@@ -127,8 +125,7 @@
 <p>Change the site name in the <code>mkdocs.yml</code> file and save your changes.</p>
 </li>
 </ol>
-<pre><code class="language-python">site_name: First Doc Site
-</code></pre>
+<p><code>site_name: First Doc Site</code></p>
 <ol>
 <li>
 <p><strong>Adding pages</strong></p>
@@ -140,12 +137,12 @@
 <li><strong>Save</strong> your work.</li>
 <li><strong>Go</strong> to <code>mkdocs.yml</code>, add the newly created files in this format, and save your changes.</li>
 </ol>
-<p><code>python
-   site_name: Getting Started with MkDocs
+<pre><code>  site_name: Getting Started with MkDocs
    nav:
      - Home: index.md
      - About: firstPage.md
-     - FAQ: secondpage.md</code></p>
+     - FAQ: secondpage.md
+</code></pre>
 <ol>
 <li>
 <p><strong>Nesting</strong></p>
@@ -155,11 +152,12 @@
 </li>
 <li><strong>Create</strong> a new folder in the <code>docs/</code> folder; this will be the parent page.</li>
 <li><strong>Create</strong> new markdown (.md) files in the new folder and add the content or text on these pages.</li>
-<li><strong>Open</strong> the <code>mkdocs.yml</code> file under the <code>nav</code> section and add the parent page and its sub-pages in the format below.
-     <img alt="How to nest pages in MkDocs" src="https://lh5.googleusercontent.com/0teWkdRI9rWPaUSnAF6V4GxekPdf4hvLHAikbd5AdFKlk3VPExyK-tUoUKzdhLEPRUHa-U04UXCZB5gSUyqxPeI2k5hmwP8a9pwfiPMLSZ8nYRzHYOcysG-mqNMoj2BZut_uNlxIGJ0oqThBeB_RkrQ align=" title="left" />
-     &gt; <em>Remember to indent your YAML file</em></li>
+<li><strong>Open</strong> the <code>mkdocs.yml</code> file under the <code>nav</code> section and add the parent page and its sub-pages in the format below.</li>
 </ol>
-<hr />
+<p><img alt="How to nest pages in MkDocs" src="../images/MkDocs-nesting.png" /></p>
+<blockquote>
+<p><em>Remember to indent your YAML file</em></p>
+</blockquote>
               
             </div>
           </div><footer>

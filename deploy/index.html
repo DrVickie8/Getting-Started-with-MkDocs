@@ -46,9 +46,9 @@
               </ul>
               <p class="caption"><span class="caption-text">How to Use MkDocs</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/usingmkdocs.md">Installation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Using-mkdocs/usingmkdocs/">Installation</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="../docs/Using-mkdocs/setup.md">Setup</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Using-mkdocs/setup/">Setup</a>
                   </li>
               </ul>
               <ul>
@@ -66,6 +66,8 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Building and Deploying Your Site</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#note">Note:</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -105,32 +107,47 @@
 <ul>
 <li><strong>Create</strong> a GitHub account on the <a href="https://github.com/">website</a>.</li>
 <li><strong>Create</strong> a new repository on GitHub. For more information, see <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo">Create a Repo</a>.</li>
-<li><strong>Push</strong> your site to this new repository by typing these commands after each other in your terminal.
-  <code>python
-  git init
+<li><strong>Push</strong> your site to this new repository by typing these commands after each other in your terminal.</li>
+</ul>
+<pre><code>  git init
   git add . //Ensure to add a space after ‘add’
-  git commit -m "First commit"
+  git commit -m &quot;First commit&quot;
   git remote add origin https://github.com/DrVickie8/MkDocsTest.git
-  git push -set-upstream origin master</code></li>
+  git push -set-upstream origin master
+</code></pre>
+<ul>
 <li><strong>Type</strong> in your terminal and wait for a few seconds
-  <code>python
-  mkdocs gh-deploy</code></li>
-<li><strong>Create</strong> a new file called <code>.gitignore</code>, add the newly created folder <code>site</code> as seen below and save changes.<blockquote>
-<p><em>Your</em> <code>first-project</code> <em>is the name of the folder the</em> <code>site</code> <em>folder is in.</em>
-<img alt="" src="https://lh5.googleusercontent.com/XCH_ToON3enQl03imHkNcicNCJasWkJjEyE_fAjZhr_azkfdRqkXEEsbQSTAzFAZXL-eP5i-Ep3JcGUayrq619Ot-2hy9dD8UFNjV184FigCVeU6VTWhtNFrpGnUtZCShjBxdncwkH4yr33mknDYHE0 align=" title="left" /></p>
+  <code>mkdocs gh-deploy</code></li>
+<li><strong>Create</strong> a new file called <code>.gitignore</code>, add the newly created folder <code>site</code> as seen below and save changes.</li>
+</ul>
+<p><img alt="Open a .gitignore file" src="../images/MkDocs-gitignore-red.png" /></p>
+<blockquote>
+<p><em>Your</em> <code>first-project</code> <em>is the name of the folder the</em> <code>site</code> <em>folder is in.</em></p>
 </blockquote>
-</li>
-<li><strong>Repeat</strong> the commands below.
-  <code>python
-  git init
+<ul>
+<li><strong>Repeat</strong> the commands below.</li>
+</ul>
+<pre><code>  git init
   git add .gitignore //Ensure to add a space after 'add'
-  git commit -m "Fix: Adding .gitignore file"
-  git push</code></li>
+  git commit -m &quot;Fix: Adding .gitignore file&quot;
+  git push
+</code></pre>
+<ul>
 <li><strong>Go</strong> to your GitHub repository and refresh the page.</li>
 <li><strong>Scroll down</strong> to the ‘Environment’ section and click ‘github-pages'</li>
-<li><strong>Click</strong> ‘View deployment’, and your MkDocs site is now available.
-  Here is a link to a GitHub repository and documentation site used to deploy a MkDocs site created following the instructions in this guide.</li>
+<li><strong>Click</strong> ‘View deployment’, and your MkDocs site is now available.</li>
 </ul>
+<hr />
+<h2 id="note">Note:</h2>
+<ul>
+<li>
+<p>When you want to make changes to your site, you will delete the <code>gh-pages</code> branch by using the <code>git push origin --delete gh-pages</code> command in your terminal.</p>
+</li>
+<li>
+<p>After you have made the changes, delete the <code>site</code> directory and type <code>mkdocs gh-deploy</code> to deploy the site.</p>
+</li>
+</ul>
+<hr />
               
             </div>
           </div><footer>
