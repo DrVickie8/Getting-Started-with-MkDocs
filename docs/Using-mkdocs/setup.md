@@ -4,13 +4,13 @@ Now that you have Python and pip installed, the next step is to install MkDocs. 
 
 1. **Type** this command in your terminal or command prompt:
 
-   ```python
+   ```
    pip install mkdocs
    ```
 
    Confirm the complete MkDocs installation by typing this command:
 
-   ```python
+   ```
    mkdocs --version
    ```
 
@@ -19,16 +19,16 @@ Now that you have Python and pip installed, the next step is to install MkDocs. 
 4. **Click** 'Open with Code' to open your VSCode.
 5. **Click** on the terminal and select 'New Terminal'.
 
-![How to open a new terminal](https://cdn.hashnode.com/res/hashnode/image/upload/v1690325830354/b15f21e4-812a-49c3-b57a-f063ed46ff58.png align="center")
+![How to open a new terminal](MkDocs-new-terminal-red.png)
 
-1. **Create** a new MkDocs project by typing in the command below in the opened terminal.
+6. **Create** a new MkDocs project by typing in the command below in the opened terminal.
 
-   ```python
+   ```
    mkdocs new my-project // ‘my-project’ can be any name
    ```
 
-2. **Navigate** to your new project folder by typing the following command:
+7. **Navigate** to your new project folder by typing the following command:
 
-   ```python
+   ```
    cd my-project
    ```

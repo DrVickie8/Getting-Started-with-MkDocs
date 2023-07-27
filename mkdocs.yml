@@ -10,4 +10,4 @@ nav:
   - Building and Deploying Your Site: deploy.md
   - Conclusion: summary.md
   - Next Steps: resources.md
-theme: readthedocs
+# theme: readthedocs

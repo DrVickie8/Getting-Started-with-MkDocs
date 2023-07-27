@@ -35,23 +35,21 @@ To make some changes to your site, follow these steps:
    - **Save** your work.
    - **Go** to `mkdocs.yml`, add the newly created files in this format, and save your changes.
 
-   ```
-   site_name: Getting Started with MkDocs
+```
+  site_name: Getting Started with MkDocs
    nav:
      - Home: index.md
      - About: firstPage.md
      - FAQ: secondpage.md
-   ```
+```
 
 3. **Nesting**
 
-   - This is grouping pages under a parent page; this makes your site organized and easy to navigate.
-   - **Create** a new folder in the `docs/` folder; this will be the parent page.
-   - **Create** new markdown (.md) files in the new folder and add the content or text on these pages.
-   - **Open** the `mkdocs.yml` file under the `nav` section and add the parent page and its sub-pages in the format below.
+- This is grouping pages under a parent page; this makes your site organized and easy to navigate.
+- **Create** a new folder in the `docs/` folder; this will be the parent page.
+- **Create** new markdown (.md) files in the new folder and add the content or text on these pages.
+- **Open** the `mkdocs.yml` file under the `nav` section and add the parent page and its sub-pages in the format below.
 
-     ![How to nest pages in MkDocs](images/MkDocs-nesting.png)
+  ![How to nest pages in MkDocs](images/MkDocs-nesting.png)
 
-     > _Remember to indent your YAML file_
-
-   ***
+  > _Remember to indent your YAML file_
